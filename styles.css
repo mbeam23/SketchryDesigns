@@ -1,0 +1,521 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url(images/background.png), url(images/backgroundB.png), url(images/backgroundC.png);
+  background-repeat: no-repeat;
+  background-position: right top, left bottom, left top;
+  color: black;
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    background-image: url(images/background3.png), url(backgroundB2.png) left bottom, url(images/backgroundC2.png) left top;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  padding-top: 2em;
+}
+
+
+nav {
+  float:right;
+  padding-top: 1em;
+  padding-right: 2em;
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    font-size:1em;
+  }
+}
+
+main {
+
+}
+
+h1 {
+  
+}
+h2 {
+
+}
+h3 {
+ 
+}
+p {
+
+}
+
+/**Menu**/
+.menu {
+  color: white;
+  font-family: mr-eaves-sans, sans-serif;
+  font-size: 2em;
+  font-weight: 200;
+  font-style: normal;
+  text-decoration: none;
+  padding-right: 1em;
+}
+
+.menu:hover {
+ color: #92e8e2;
+}
+
+.instagram {
+  max-width: 7%;
+}
+
+/**Button**/
+
+button {
+  padding:1em;
+  margin-top: 1em;
+  border-radius: 1em;
+  background-color: #474747;
+
+}
+
+.visit {
+  color: white;
+  font-size: 3em;
+  font-family: mr-eaves-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #92e8e2;
+}
+
+@media screen and (max-width: 1000px) {
+  button {
+    margin-left: 6em;
+  }
+}
+
+ /**Gallery**/
+
+.gallery {
+  font-size: 11em;
+  font-family: mr-eaves-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding-left: 5%;
+}
+
+.row { 
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 45%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+ /**Overlay**/
+
+ .container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+ }
+
+ .image {
+  display: block;
+  width: 100%;
+  height: auto;
+ }
+
+ .overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: #b2b2b2; /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-family: mr-eaves-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+  padding-top: 30px;
+  text-align: center;
+  line-height:10px;
+}
+
+ @media screen and (max-width: 1200px) {
+  .overlay {
+  display: none;
+  }
+}
+
+.container:hover .overlay {
+  opacity: .90;
+}
+
+ /**Welcome**/
+
+.text2 {
+  font-size: 55px;
+  font-family: mr-eaves-sans, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  padding-top:4em;
+  margin-right: 10em;
+  line-height: 0;
+
+}
+
+
+.Wimage {
+  float:right;
+  max-width: 20%;
+  margin-right: 30%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+
+}
+
+
+ @media screen and (max-width: 1300px) {
+  .Wimage {
+  max-width: 40%;
+  margin-right: 30%;
+  margin-top: 20%;
+  margin-bottom: 5%;
+  }
+}
+
+.introtext {
+  font-size: 20px;
+  font-family: mr-eaves-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 7em;
+  line-height-top: 0;
+}
+
+
+@media screen and (max-width: 1700px) {
+  .introtext {
+    margin-right: 20%;
+    margin-left: 20%;
+    padding-bottom: 1em;
+  }
+}
+
+.text1 {
+  font-size: 20px;
+  font-family: mr-eaves-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-right: 10em;
+}
+
+.subhead {
+ font-size: 2.2em;
+ font-family: mr-eaves-sans, sans-serif;
+ font-weight: 200;
+ font-style: normal;
+ color: white;
+ padding-left: 5.5%;
+ margin-bottom: 0;
+ padding-bottom: .5em;
+}
+
+ @media screen and (max-width: 900px) {
+  .subhead {
+   color: #e5e5e5;
+   font-size: 1.5em;
+   padding-bottom:.5em;
+   padding-top: 3em;
+   padding-left:0;
+   text-align: center;
+  }
+}
+
+
+.welcometitle {
+  color: #4c4c4c;
+  font-size: 8em;
+  font-family: mr-eaves-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-left: 24%;
+  padding-top: 2em;
+  padding-bottom: 0;
+  line-height: 0;
+
+}
+
+ @media screen and (max-width: 1700px) {
+  .welcometitle {
+  font-size: 5em;
+  padding-top: 4em;
+  padding-left: 0;
+  margin-left: 20%;
+  }
+}
+
+.intro {
+  color: white;
+  font-size: 7em;
+  font-family: mr-eaves-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  padding-left: 5%;
+  margin-top:0;
+  padding-top: 0;
+  line-height: .75em;
+}
+
+
+ @media screen and (max-width: 900px) {
+  .intro {
+   font-size: 5em;
+   text-align: center;
+   padding: 0;
+  }
+}
+
+ .welcomeimage {
+  max-width: 55%;
+  padding-left: 10%;
+
+ }
+
+.welcomeimage2 {
+  max-width: 45%;
+  padding-left: 10%;
+  padding-bottom: 5em;
+  float:left;
+ }
+
+ @media screen and (max-width: 900px) {
+  .welcomeimage {
+    flex: 50%;
+    max-width: 75%;
+    padding-left: 5%;
+  }
+}
+
+ @media screen and (max-width: 1000px) {
+  .welcomeimage2 {
+    flex: 50%;
+    max-width: 100%;
+    padding-right: 1em;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .text2 {
+    font-size: 40px;
+    margin-right: 5em;
+    margin-left: 2em;
+  }
+}
+
+ @media screen and (max-width: 1700px) {
+  .text1 {
+    margin-right: 5em;
+    margin-left: 4em;
+  }
+}
+
+.gallery {
+  color: white;
+  font-size: 10em;
+  font-family: mr-eaves-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  padding-left: 5%;
+  line-height: .75em;
+}
+
+ @media screen and (max-width: 900px) {
+  .gallery {
+   padding-top: 1em;
+   font-size: 5em;
+   text-align: center;
+  }
+}
+
+.gallerytext {
+  font-size: 20px;
+  font-family: mr-eaves-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align:center;
+  margin-left: 20em;
+  margin-right: 20em;
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+@media screen and (max-width: 1200px) {
+  .gallerytext {
+    padding-top: 12em;
+    margin-right: 4em;
+    margin-left: 4em;
+  }
+}
+
+@media screen and (max-width: 1700px){
+.instagram {
+  max-width: 5%;
+  padding: 0;
+}
+}
+
+.sketch {
+  color: #333333;
+  font-family: mr-eaves-sans, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  margin-top: 25em;
+  text-align: right;
+  padding-right: 2em;
+}
+
+.footimage {
+  max-width: 2%;
+}
+
+@media screen and (max-width: 1100px){
+.sketch {
+  color:white;
+  margin-top: 10em;
+  text-align: center;
+}
+}
+
+@media screen and (max-width: 1100px){
+.footimage {
+  max-width: 5%;
+}
+}
+
+.Abouttitle {
+  font-size: 5em;
+  font-family: mr-eaves-sans, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  text-align: center;
+  padding-bottom: 0;
+  margin-top: 2em;
+
+}
+
+@media screen and (max-width: 1100px){
+.Abouttitle {
+  font-size: 5em;
+  margin:0;
+}
+}
+
+.introtext2 {
+  font-size: 20px;
+  font-family: mr-eaves-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-left: 30%;
+  margin-right: 30%;
+  line-height-top: 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .introtext2 {
+   margin-right: 5em;
+   margin-left: 4em;
+  }
+}
+
+.AboutBird {
+  max-width: 10%;
+  margin-left: 40%;
+}
+
+@media screen and (max-width: 1400px) {
+  .AboutBird {
+   margin-left:25%;
+   max-width: 35%;
+  }
+}
+
+.intro3 {
+  color: white;
+  font-size: 7em;
+  font-family: mr-eaves-sans, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  padding-top: .5em;
+  padding-left: 5%;
+  line-height: 0;
+}
+
+ @media screen and (max-width: 1300px) {
+  .intro3 {
+   font-size: 5em;
+   text-align: center;
+   padding: 0;
+   margin-top: 2em;
+  }
+}
+
+.subhead3 {
+ font-size: 2.2em;
+ font-family: mr-eaves-sans, sans-serif;
+ font-weight: 200;
+ font-style: normal;
+ color: white;
+ padding-left: 5%;
+ margin-bottom: 0;
+ padding-bottom: .5em;
+ line-height: 0;
+}
+
+ @media screen and (max-width: 1300px) {
+  .subhead3 {
+   color: #e5e5e5;
+   font-size: 1.5em;
+   margin-bottom:12em;
+   padding-left:0;
+   text-align: center;
+  }
+}
